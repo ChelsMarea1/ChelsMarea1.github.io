@@ -53,7 +53,7 @@ container {
 main {
         display: grid;
         gap: 0;
-        grid-column: auto;
+        grid-column: span;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(5, 1fr);
         margin: 0;
@@ -104,28 +104,48 @@ main {
         grid-row: 5/6;
       }
       #Tech_Competencies {
+        align-self: center;
         display: inline;
         margin: 0;
         padding: 0;
         justify-self: center;
       }
-      #ul_tech_competencies li{
+      #ul_microsoft_program li{
+        align-self: center;
         display: inline;
+        justify-self: center;
         margin: 0;
         padding: 0;
       }
-      li {
-      font-size:14px;       
-      list-style-type:none; 
+      #ul_tech_competencies li{
+        align-self: center;
+        display: inline;
+        justify-self: center;
+        margin: 0;
+        padding: 0;
+      }
+      #ul_tech_competencies_contd li {
+        align-self: center;
+        display: inline;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        list-style: inside;
+      }
+      li::before {
+        content:"\27BC"
+      }
+      li {  
+      list-style-type:none;  
       margin: 0;
       padding: 0;
-      position:relative;
+      text-align: inherit;  
     }
-  .bucks {
+  #bucks {
   color: rgb(163, 69, 69);
   text-align: center;
     }
-    html {  
+  html {  
       scroll-behavior: smooth;  
     }
       @media only screen and (max-width: 961px) {
