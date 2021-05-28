@@ -77,7 +77,7 @@ main {
         position: relative;
         z-index: 1;
       }
-        .section_five {
+      .section_five {
         grid-column: 1/2;
         grid-row: 3/5;
       }
@@ -97,10 +97,7 @@ main {
       .section_eight {
         grid-column: 4/6;
         grid-row: 3/5;
-        justify-self: center;
-        position: relative;
-        z-index: 1;
-       }
+        }
       #pro_attributes_section {
         text-align: center;
       }
